@@ -13,6 +13,30 @@
    * MongoDB
 <!--te-->
 
+<h3>Endpoints:</h3>
+<strong>Create</strong><br>
+POST http://localhost:8080/accounts
+
+```
+"name": "Owner-name",
+"Document": "Document-number"
+```
+<hr>
+<strong>Read</strong><br>
+GET http://localhost:8080/accounts
+<hr>
+<strong>Update</strong><br>
+PUT http://localhost:8080/account/{Document}
+
+```
+"name": "Owner-name",
+"Document": "Document-number"
+"balance": "Value"
+```
+<hr>
+<strong>Delete</strong><br>
+DELETE http://localhost:8080/account/{Document}
+
 <h3 align="center"> 
-	🚧  Status: Em construção  🚧
+	🚧  Status do projeto: Em construção  🚧
 </h3>
