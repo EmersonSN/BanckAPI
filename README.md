@@ -17,9 +17,9 @@
 <strong>Create</strong><br>
 POST http://localhost:8080/accounts
 
-```
-"name": "Owner-name",
-"Document": "Document-number"
+```json
+{"name": "Owner-name",
+"Document": "Document-number"}
 ```
 <hr>
 <strong>Read</strong><br>
@@ -28,10 +28,10 @@ GET http://localhost:8080/accounts
 <strong>Update</strong><br>
 PUT http://localhost:8080/account/{Document}
 
-```
-"name": "Owner-name",
-"Document": "Document-number"
-"balance": "Value"
+```json
+{"name": "Owner-name",
+"Document": "Document-number",
+"balance": "Value"}
 ```
 <hr>
 <strong>Delete</strong><br>
