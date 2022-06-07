@@ -1,0 +1,11 @@
+1- Dependencias gradle
+	Spring WEB (Criação do server e API)
+	MongoDB embeded (Persistencia de dados)
+	MongoDB  (Persistencia de dados)
+
+Vamos fazer um crud, aquele que contem as 4 operações em relação a BD numa operação de um aplicativo, sendo eles: Create, Read, Update e Delete, vamos fazer cada um dele com um metodo de API seguindo a mesma ordem: POST, GET, PUT e DELETE e cada um com sua rota nominal, sem ter que ser a mesma rota com parametros diferentes.
+Assim que criado e aberto o projeto ele já pode ser executao e acessado via postman. Ainda no postman criamos toda a documentação, fazendo um pacote.
+
+Criamos nossa classe de dominio/modelo de classe e assim nasceu Account que será um data class, que é basicamente uma classe, mas que guarda dados e se necessário metodos sobre a classe criado, os dados são passados via parametro e dali já saem automaticamente getters e setters e construtores.
+Nessa data class criamos somente os dados no parenteses, sendo alguns nullables.
+Criamos então uma interface para ser o retpository e extendenmos o MongoRepository nela onde na extenção passamos a classe modelo (Account) e o tipo do atributo ID (String), após isso criamos uma função que faz a busca pelo documento, isso é: documento é parametro dessa função, função essa que retorna um Optional do tipo Account, já que vamos buscar uma conta
