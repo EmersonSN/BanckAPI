@@ -19,23 +19,23 @@ POST http://localhost:8080/accounts
 
 ```json
 {"name": "Owner-name",
-"Document": "Document-number"}
+"document": "Document-number"}
 ```
 <hr>
 <strong>Read</strong><br>
 GET http://localhost:8080/accounts
 <hr>
 <strong>Update</strong><br>
-PUT http://localhost:8080/account/{Document}
+PUT http://localhost:8080/account/{document}
 
 ```json
 {"name": "Owner-name",
-"Document": "Document-number",
+"document": "Document-number",
 "balance": "Value"}
 ```
 <hr>
 <strong>Delete</strong><br>
-DELETE http://localhost:8080/account/{Document}
+DELETE http://localhost:8080/account/{document}
 
 <h3 align="center"> 
 	🚧  Status do projeto: Em construção  🚧

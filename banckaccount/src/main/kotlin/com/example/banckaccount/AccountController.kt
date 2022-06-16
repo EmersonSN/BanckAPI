@@ -1,6 +1,7 @@
 package com.example.banckaccount
 
 import org.springframework.http.ResponseEntity
+import org.springframework.web.bind.annotation.DeleteMapping
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.PostMapping
@@ -26,4 +27,6 @@ class AccountController(val repository: AccountRepository) {
         val saved = repository.save(accountDB.copy(name = account.name, balance = account.balance))
         return ResponseEntity.ok(saved)
     }
+    @DeleteMapping("{document}")
+    fun delete(@PathVariable document: String) = repository.findByDocument(document).ifPresent{repository.delete(it)}
 }
